@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sharedy | One Big Stream</title>
+<meta content="Sharedy lets you post any link you want and adds it to the public stream" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>  
+<script type="text/javascript" src="http://scripts.embed.ly/jquery.embedly.js"></script>
+<script type="text/javascript" src="/static/js/scripts.js"></script>
+<link rel="stylesheet" href="/static/css/site.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+<div id="content" class="main">
+<div id="sharebox">
+	<div class="error"></div>
+	<textarea class="sharecontent">Post a link to your favorite content, Sharedy will do the rest.</textarea>
+	<div class="sssh"><input type="text" name="title" value="" /></div>
+	<input type="hidden" name="timestamp" value="{{timestamp}}" />
+	<input type="hidden" name="security_hash" value="{{security_hash}}" />
+	<a class="ideas" target="_blank" href="http://search.twitter.com/search?q=twitpic+OR+tweetphoto+OR+flic.kr+OR+youtube+OR+yfrog+OR+hulu+OR+animoto+OR+imgur+OR+twitgoo+OR+vimeo+OR+twitvid+filter%3Alinks">Need a link?</a>
+	<button class="sharebutton">Share</button>
+</div>
+<div class="clear"></div>
+<ul id="shares">
+{% for share in shares %}
+<li><p>{{share.message_html}}</p></li>
+{% endfor %}
+</ul>
+</div>
+
+<div id="footer">
+<p><a href="http://api.embed.ly">powered by <img src="http://api.embed.ly/static/img/home/header_logo.png"/></a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* UTILS */
+IMG {display:block; margin:auto; max-width:400px;}
+OBJECT {display:block; margin:auto;}
+.error {display:none;}
+.clear {clear:both}
+.sssh {display:none;}
+
+
+/* BODY */
+body {background-image:url(/static/img/sharedy.png);background-repeat: no-repeat;background-position: 20px 100px;background-attachment:fixed;font-family:'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;}
+#content{border-left:1px solid #000000;border-right:1px solid #000000;margin:0 auto;width:600px;}
+li {background-color:#FFFFFF;border-bottom:1px solid #999999;border-top:1px solid #999999;list-style-image:none;list-style-position:outside;list-style-type:none;margin:20px 10px 0;padding:10px 10px 20px;}
+#sharebox {margin:10px auto;width:500px;}
+#sharebox .sharebutton {background-color:#5B74A8;border-color:#29447E #29447E #1A356E;color:#FFFFFF;float:right;font-size:13px;font-weight:bold;margin:10px 0;padding:1px 0 2px;}
+#sharebox .sharecontent {font-size:13px;height:61px;margin:0;outline:medium none;padding:0;vertical-align:bottom;width:100%;color:#777777;line-height:21px;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;border-color:#AEAEAE #BBBBBB #BBBBBB;border-right:1px solid #BBBBBB;border-style:solid;border-width:1px;}
+.embed {margin:10px 0;}
+.ideas{color:#999999;display:block;float:left;font-size:0.8em;margin:5px 0;}
+
+
+/* FOOTER */
+#footer {margin:20px auto;width:600px;}
+#footer A {color:#AAAAAA;font-size:0.75em;font-weight:bold;text-decoration:none;}
+#footer P{ float:right; margin:0 0 20px;}
+#footer IMG {display:inline;}
